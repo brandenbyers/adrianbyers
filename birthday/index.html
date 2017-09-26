@@ -112,8 +112,9 @@
       var hashParams = window.location.href.substr(1).split('?'); // substr(1) to remove the `#`
           hashParams = hashParams[1].split('&');
           var p = hashParams[0].split('=');
+          var q = hashParams[1].split('=');
           document.getElementById('email').value = p[1];
-          document.getElementById('child').value = p[2];
+          document.getElementById('child').value = q[1];
     }
   </script>
 
