@@ -1,0 +1,15 @@
+
+html {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro {
+  background-color: lime;
+}
