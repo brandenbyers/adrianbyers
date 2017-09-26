@@ -2,15 +2,62 @@
 
 html {
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 .image {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+}
+.image img {
+  display: flex;
+  width: 90%;
+}
+.intro {
+  display: flex;
+  text-align: center;
+  font-size: 1.5rem;
+  /*font-weight: 800;*/
+  padding: .2rem 3.5rem;
+  line-height: 2;
 }
 
-.intro {
-  background-color: lime;
+.details {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.rsvp {
+  /*display: flex;
+  flex-direction: column;*/
+  margin: 0 1rem;
+  text-align: center;
+  border: solid #f4e04D;
+  border-width: thin;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.second {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.second p{
+  padding-right: 1.5rem;
+}
+.second label {
+  padding-right: .5em;
+}
+
+.third {
+  margin-bottom: 1rem;
+}
+.button {
+  padding: .5em 2em;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border-radius: 40px;
+  border: solid #f4e04D;
+
+
 }

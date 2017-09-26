@@ -21,26 +21,32 @@
 
     <!-- Event Details -->
     <div class="details">
-      Date: October 7th, 2017
-      Time: 11am - 1pm
-      Where: Adrian's House
+      <p>Date: October 7th, 2017<br>Time: 11am - 1pm</br>
+      Where: Adrian's House</p>
     </div>
-    <!-- Title -->
-    <h1>RSVP</h1>
 
+    <!-- RSVP -->
+    <div class="rsvp">
+      <div class="header">
+        <h1>Say Yes!</h1>
+      </div>
     <!-- First Question -->
-    <label for="email">Email address</label>
-    <input name="emailAddress" type="text" id="email"/>
-
+    <div class="row">
+      <label for="email"></label>
+      <input name="emailAddress" type="text" id="email" placeholder="Email Address"/>
+    </div>
     <!-- Second Question -->
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeGK2TxGtUS5vKxKrDAfcM0Hqww-2hhbStRYMZaK8k9_QVRMw/formResponse">
-      <p>RSVP</p>
-      <input type="radio" name="entry.594727283" id="yes" value="Yes">
-      <label for="yes">Yes</label>
-      <input type="radio" name="entry.594727283" id="no" value="No">
-      <label for="no">No</label>
 
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeGK2TxGtUS5vKxKrDAfcM0Hqww-2hhbStRYMZaK8k9_QVRMw/formResponse">
+  <div class="second">
+        <p>RSVP</p>
+        <input type="radio" name="entry.594727283" id="yes" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="entry.594727283" id="no" value="No">
+        <label for="no">No</label>
+    </div>
     <!-- Third Question -->
+    <div class="third">
       <p>How many children will attend?</p>
       <select name="entry.72581691">
         <option selected disabled>Choose</option>
@@ -48,15 +54,16 @@
         <option value="2">2</option>
         <option value="3">3</option>
       </select>
-
+    </div>
     <!-- Fourth Question -->
-    <div class="fourth">
-    <label for="names">Names of child attendees</label>
-    <input name="entry.1908220324" type="text" id="names"/>
+    <div class="row">
+    <label for="names"></label>
+    <input name="entry.1908220324" type="text" id="names" placeholder="Name of child attendees"/>
     </div>
 
     <!-- Submit Button -->
     <input class="button" type="submit" value="Submit">
   </form>
+</div>
   </body>
 </html>
