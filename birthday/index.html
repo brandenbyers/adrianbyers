@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="../css/birthday.css" type="text/css" rel="stylesheet">
-        <link href="reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/bulma.css" type="text/css" rel="stylesheet">
+    <!--<link href="../css/birthday.css" type="text/css" rel="stylesheet">-->
+        <!--<link href="reset.css" type="text/css" rel="stylesheet">-->
     <meta charset="utf-8">
     <title>rsvp</title>
   </head>
   <body>
 
-    <!-- Image -->
-    <div class="image">
-    <img src="../img/adrian-birthday-dinosaur.svg" alt="dinasour image">
-    </div>
-
-    <!-- Intro -->
-    <div class="intro">
-      <p>Please join Adrian in an excavation adventure and the celebration of his 5th birthday!
-          It is going to a fun filled event with dinosurs, digging and searcing.</p>
-    </div>
-
-    <!-- Event Details -->
-    <div class="details">
-      <p>Date: October 7th, 2017<br>Time: 11am - 1pm</br>
-      Where: Adrian's House</p>
-    </div>
-
-    <!-- RSVP -->
-    <div class="rsvp">
-      <div class="header">
-        <h1>Say Yes!</h1>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <img src="../img/adrian-birthday-dinosaur.svg" alt="dinasour image">
       </div>
-    <!-- First Question -->
-    <div class="row">
-      <label for="email"></label>
-      <input name="emailAddress" type="text" id="email" placeholder="Email Address"/>
     </div>
-    <!-- Second Question -->
+  </section>
 
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeGK2TxGtUS5vKxKrDAfcM0Hqww-2hhbStRYMZaK8k9_QVRMw/formResponse">
-  <div class="second">
-        <p>RSVP</p>
-        <input type="radio" name="entry.594727283" id="yes" value="Yes">
-        <label for="yes">Yes</label>
-        <input type="radio" name="entry.594727283" id="no" value="No">
-        <label for="no">No</label>
-    </div>
-    <!-- Third Question -->
-    <div class="third">
-      <p>How many children will attend?</p>
-      <select name="entry.72581691">
-        <option selected disabled>Choose</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-    </div>
-    <!-- Fourth Question -->
-    <div class="row">
-    <label for="names"></label>
-    <input name="entry.1908220324" type="text" id="names" placeholder="Name of child attendees"/>
-    </div>
+  <section class="section">
+    <div class="container is-widescreen">
 
-    <!-- Submit Button -->
-    <input class="button" type="submit" value="Submit">
-  </form>
-</div>
+      <div class="has-text-centered">
+        <h1 class="title is-size-1">
+          Join us for a dinosaur bone excavation birthday party!
+        </h1>
+        <p class="title is-size-4">
+          October 7th from 11am to 1pm @ Adrian's Backyard
+        </p>
+        <p>
+          Adrian is turning 5-years-old. We will be digging up dinosaur "fossils," searching for dinosaur eggs, and eating dino-licious cake.
+        </p>
+      </div>
+
+      <form name="birthday-rsvp" action="/success/" netlify-honeypot="bot-field" netlify>
+        <div class="column">
+          <p style="visibility:hidden;">
+            <label>Don’t fill this out unless you're a bot: <input name="bot-field"></label>
+          </p>
+          <div class="column is-half is-offset-one-quarter">
+
+            <div class="field">
+              <label class="label is-large">Will you be joining us?</label>
+              <div class="control has-icons-left">
+                <div class="select is-large is-fullwidth">
+                  <select name="RSVP">
+                    <option value="" disabled selected>Joining us?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input is-large" name="Email" type="email" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input is-large" name="Child's Name" type="name" placeholder="Child's Name">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control has-icons-left">
+                <div class="select is-large is-fullwidth">
+                  <select name="Number of Children">
+                    <option value="" disabled selected>Number of Children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="has-text-centered">
+              <button type="submit" class="button is-primary is-large is-fullwidth">Submit</button>
+            </div>
+
+          </div>
+      </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Dress for an outdoor party. In the event of heavy rain, we will perform the excavation dig under a porch overhang and eat cake inside. We hope to see you there!
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/jgthms/bulma">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
   </body>
 </html>
