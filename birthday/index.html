@@ -57,13 +57,14 @@
 
             <div class="field">
               <div class="control has-icons-left">
-                <input class="input is-large" name="Email" type="email" placeholder="Email">
+
+                <input id="email" class="input is-large" name="Email" type="email" placeholder="Email">
               </div>
             </div>
 
             <div class="field">
               <div class="control has-icons-left">
-                <input id="childName" class="input is-large" name="Child's Name" type="name" placeholder="Child's Name">
+                <input id="child" class="input is-large" name="Child's Name" type="name" placeholder="Child's Name">
               </div>
             </div>
 
@@ -111,8 +112,8 @@
       var hashParams = window.location.href.substr(1).split('?'); // substr(1) to remove the `#`
           hashParams = hashParams[1].split('&');
           var p = hashParams[0].split('=');
-
-          document.getElementById('childName').value = p[1];
+          document.getElementById('email').value = p[1];
+          document.getElementById('child').value = p[2];
     }
   </script>
 
